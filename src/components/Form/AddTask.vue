@@ -91,7 +91,6 @@ export default {
         name: this.name,
         canvas: document.getElementById('cvs').toDataURL('image/jpeg', 1.0),
       });
-      this.loadTasks();
       this.name = '';
     },
   },
