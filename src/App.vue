@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>{{ appTitle }}</h1>
+    <TodoList />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import TodoList from './components/Todo/TodoList';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld,
+    TodoList,
   },
+  data: () => ({
+    appTitle: 'Vue Todo List',
+  }),
 };
 </script>
 
